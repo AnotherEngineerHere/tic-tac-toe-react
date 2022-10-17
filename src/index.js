@@ -26,7 +26,11 @@ const Board = () => {
 
 
   const handleClickEvent= (i) =>{
-    alert(`square ${i} clicked`)
+    //1. Make a copy of the square state array
+
+    //2. Mutate the copy, setting the ith element to X
+
+    //3. Call the setSquares function with the mutated copy
   };
   const renderSquare = (i) =>{
     return(
