@@ -24,6 +24,14 @@ const Board = () => {
   const handleClickEvent = (i) => {
     //1. Make a copy of the square state array
     const newSquares = [...squares]
+
+    const winnerDeclared = Boolean(calculateWinner(newSquares))
+    const squareFilled = Boolean(newSquares[i])
+
+    if(winnerDeclared || squareFilled){
+      return
+    }
+
     //2. Mutate the copy, setting the ith element to X
     newSquares[i] = xIsNext ? "X" : "O"
     //3. Call the setSquares function with the mutated copy
