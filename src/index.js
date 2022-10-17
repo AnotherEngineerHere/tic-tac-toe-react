@@ -32,6 +32,7 @@ const Board = () => {
       return
     }
 
+    //DUDE
     //2. Mutate the copy, setting the ith element to X
     newSquares[i] = xIsNext ? "X" : "O"
     //3. Call the setSquares function with the mutated copy
